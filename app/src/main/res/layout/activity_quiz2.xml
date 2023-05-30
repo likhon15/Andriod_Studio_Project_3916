@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    tools:context=".Quiz2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QuizCracker_"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:layout_marginBottom="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:padding="20sp"
+        android:text="What is the national fruit of Bangladesh?"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RadioGroup
+        android:id="@+id/radioOptionQ2"
+        android:layout_width="match_parent"
+        android:paddingLeft="20sp"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mango"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/b"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Jackfruit" />
+        <RadioButton
+            android:id="@+id/c"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strawberry" />
+        <RadioButton
+            android:id="@+id/d"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lichi" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/radioOption"
+            android:text="Pre"
+            android:onClick="prePage"
+            android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/purple"
+            app:cornerRadius = "20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/radioOption"
+            android:onClick="nextPage"
+            android:text="Next"
+            android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/purple"
+            app:cornerRadius = "20dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
